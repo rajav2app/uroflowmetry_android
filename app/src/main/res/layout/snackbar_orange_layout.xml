@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llDeviceConnection"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@drawable/background_snackbar_orange">
+    <ImageView
+        android:id="@+id/imgAlert"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/device_not_connected" />
+    <TextView
+        android:id="@+id/device_connection_failed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/device_connection_failed"
+        android:textSize="24sp"
+        android:paddingEnd="5dp"
+        android:fontFamily="@font/myriad_pro_semibold"
+        android:textColor="@color/font_white" />
+
+
+</LinearLayout>

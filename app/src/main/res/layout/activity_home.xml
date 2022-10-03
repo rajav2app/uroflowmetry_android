@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+  </data>
+
+  <LinearLayout
+      android:id="@+id/llmain"
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      tools:context=".activity.HomeActivity"
+      android:background="@color/background_main_to_fragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:background="@color/background_splash"
+        android:theme="@style/Theme.UroflowmetryApp.AppBarOverlay">
+
+      <androidx.appcompat.widget.Toolbar
+          android:id="@+id/toolBar"
+          android:layout_width="match_parent"
+          android:layout_height="75dp"
+          android:background="@color/background_splash"
+          app:theme="@style/Theme.UroflowmetryApp.MyToolbarStyle"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+      <LinearLayout
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="match_parent"
+          android:layout_margin="1dp"
+          android:orientation="vertical"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toStartOf="@+id/guideline2"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/appBarLayout" >
+
+        <include
+            android:id="@+id/sideMenu"
+            layout="@layout/content_home_activity"/>
+      </LinearLayout>
+
+
+
+
+     <!-- <fragment
+          android:name="com.example.uroflowmetryapp.fragment.MenuFragment"
+          android:id="@+id/main_menu"
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="match_parent"
+          android:layout_margin="1dp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toStartOf="@+id/guideline2"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+-->
+      <androidx.fragment.app.FragmentContainerView
+          android:id="@+id/main_content"
+          android:layout_width="0dp"
+          android:layout_weight="3"
+          android:layout_height="match_parent"
+          android:layout_marginTop="15dp"
+          android:layout_marginBottom="15dp"
+          android:layout_marginRight="15dp"
+          android:layout_marginLeft="15dp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="@+id/guideline2"
+          app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+
+
+    </LinearLayout>
+
+  </LinearLayout>
+</layout>

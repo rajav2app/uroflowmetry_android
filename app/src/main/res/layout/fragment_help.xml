@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/scrollViewView"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/background_splash"
+    tools:context=".fragment.HelpFragment"
+    android:nestedScrollingEnabled="true"
+    android:fillViewport="true">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="40dp"
+                    android:textSize="26sp"
+                    android:fontFamily="@font/myriad_pro_bold"
+                    android:background="@color/font_green"
+                    android:textColor="@color/font_white"
+                    android:text="Watch Demo Video" />
+
+                <ExpandableListView
+                    android:id="@+id/expandable_help_view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="true"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="40dp"
+                    android:textSize="26sp"
+                    android:fontFamily="@font/myriad_pro_bold"
+                    android:background="@color/font_green"
+                    android:textColor="@color/font_white"
+                    android:text="FAQs" />
+
+                <ExpandableListView
+                    android:id="@+id/expandable_help_view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="true"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="40dp"
+                    android:textSize="26sp"
+                    android:fontFamily="@font/myriad_pro_bold"
+                    android:background="@color/font_green"
+                    android:textColor="@color/font_white"
+                    android:text="References" />
+
+                <ExpandableListView
+                    android:id="@+id/expandable_help_view3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="true"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="40dp"
+                    android:textSize="26sp"
+                    android:fontFamily="@font/myriad_pro_bold"
+                    android:background="@color/font_green"
+                    android:textColor="@color/font_white"
+                    android:text="Contact Us" />
+
+
+                <ExpandableListView
+                    android:id="@+id/expandable_help_view4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="true"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

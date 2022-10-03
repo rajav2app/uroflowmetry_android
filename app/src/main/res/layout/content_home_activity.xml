@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_splash"
+    android:orientation="vertical"
+    android:padding="18dp"
+    android:paddingTop="20dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:id="@+id/home_ll_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@drawable/elevated_radius"
+            android:elevation="3.5dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/history_ll_layout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/home_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="18dp"
+                android:src="@drawable/ic_home"
+                tools:layout_editor_absoluteX="18dp"
+                tools:layout_editor_absoluteY="115dp" />
+
+            <TextView
+                android:id="@+id/home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="@font/myriad_pro_regular"
+                android:text="@string/title_home"
+                android:textSize="24sp"
+                tools:layout_editor_absoluteX="90dp"
+                tools:layout_editor_absoluteY="131dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/history_ll_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/device_setup_ll_layout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home_ll_layout">
+
+            <ImageView
+                android:id="@+id/history_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="18dp"
+                android:src="@drawable/ic_history"
+                tools:layout_editor_absoluteX="18dp"
+                tools:layout_editor_absoluteY="249dp" />
+
+            <TextView
+                android:id="@+id/history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="@font/myriad_pro_regular"
+                android:text="@string/title_history"
+                android:textSize="24sp"
+                tools:layout_editor_absoluteX="54dp"
+                tools:layout_editor_absoluteY="261dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/device_setup_ll_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/hospital_setting_ll_layout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/history_ll_layout">
+
+            <ImageView
+                android:id="@+id/device_setup_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="18dp"
+                android:src="@drawable/ic_device_setup"
+                tools:layout_editor_absoluteX="18dp"
+                tools:layout_editor_absoluteY="382dp" />
+
+            <TextView
+                android:id="@+id/device_setup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="@font/myriad_pro_regular"
+                android:text="@string/title_device_setup"
+                android:textSize="24sp"
+                tools:layout_editor_absoluteX="54dp"
+                tools:layout_editor_absoluteY="392dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hospital_setting_ll_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/about_ll_layout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/device_setup_ll_layout">
+
+            <ImageView
+                android:id="@+id/hospital_setup_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="18dp"
+                android:src="@drawable/ic_device_setup"
+                tools:layout_editor_absoluteX="18dp"
+                tools:layout_editor_absoluteY="382dp" />
+
+            <TextView
+                android:id="@+id/hospital_setup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="@font/myriad_pro_regular"
+                android:text="@string/title_hospital_setup"
+                android:textSize="24sp"
+                tools:layout_editor_absoluteX="54dp"
+                tools:layout_editor_absoluteY="392dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/about_ll_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/help_ll_layout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hospital_setting_ll_layout">
+
+            <ImageView
+                android:id="@+id/about_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="18dp"
+                android:src="@drawable/ic_about"
+                tools:layout_editor_absoluteX="18dp"
+                tools:layout_editor_absoluteY="515dp" />
+
+            <TextView
+                android:id="@+id/about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="@font/myriad_pro_regular"
+                android:text="@string/title_about"
+                android:textSize="24sp"
+                tools:layout_editor_absoluteX="54dp"
+                tools:layout_editor_absoluteY="522dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/help_ll_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/about_ll_layout">
+
+            <ImageView
+                android:id="@+id/help_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="18dp"
+                android:src="@drawable/ic_help"
+                tools:layout_editor_absoluteX="18dp"
+                tools:layout_editor_absoluteY="649dp" />
+
+            <TextView
+                android:id="@+id/help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="@font/myriad_pro_regular"
+                android:text="@string/title_help"
+                android:textSize="24sp"
+                tools:layout_editor_absoluteX="54dp"
+                tools:layout_editor_absoluteY="652dp" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/welcom_splash_logo" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:layout_margin="30dp"
+            android:id="@+id/themeSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:track="@drawable/track"
+            android:thumb="@drawable/thumb"
+            app:layout_constraintBottom_toTopOf="@+id/imageView4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

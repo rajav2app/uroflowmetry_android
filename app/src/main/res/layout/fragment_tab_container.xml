@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_splash"
+    tools:context=".fragment.TabContainerFragment">
+
+   <!-- <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        app:tabGravity="start"
+        app:tabMode="scrollable"
+        app:tabTextAppearance="@style/MineCustomTabText"
+        android:background="@color/background_main_to_fragment"
+        app:tabBackground="@drawable/tablayout_backgroung"
+        app:tabIndicator="@drawable/tablayout_backgroung"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Configuration" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calibration" />
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hospital Details" />
+
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayout">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </HorizontalScrollView>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_splash"
+        android:elevation="10dp">
+
+        <FrameLayout
+            android:id="@+id/device_setup_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp">
+
+        </FrameLayout>
+
+
+        <Button
+            android:id="@+id/btn_device_setup"
+            android:layout_width="250dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="@color/background_splash"
+            android:elevation="5dp"
+            android:gravity="center"
+            android:text="@string/title_configuration"
+            android:textAlignment="gravity"
+            android:textAllCaps="false"
+            android:textColor="@color/font_black"
+            android:textSize="20dp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/btn_calibration"
+            android:layout_width="250dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@id/btn_device_setup"
+            android:elevation="5dp"
+            android:gravity="center"
+            android:text="@string/title_calibration"
+            android:textAlignment="gravity"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            android:textStyle="normal"
+            android:textColor="@color/font_black"
+            android:backgroundTint="@color/background_main_to_fragment"/>
+
+       <!-- <Button
+            android:id="@+id/btn_hospital_details"
+            android:layout_width="250dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@id/btn_calibration"
+            android:elevation="5dp"
+            android:gravity="center"
+            android:text="@string/title_hospital_details"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            android:textStyle="normal"
+            android:textColor="@color/font_black"
+            android:backgroundTint="@color/background_main_to_fragment"/>
+-->
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

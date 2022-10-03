@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="35dp"
+    android:paddingBottom="40dp"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp"
+    android:orientation="vertical"
+    android:background="@color/background_splash"
+    tools:context=".fragment.AboutUsFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_vtitan"
+        android:textSize="30sp"
+        android:gravity="start"
+        android:textColor="@color/background_normal"
+        android:fontFamily="@font/myriad_pro_bold"
+        android:layout_marginBottom="10dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/about_v_titan"
+        android:textSize="20sp"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/font_black"
+        android:fontFamily="@font/myriad_pro_regular"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Our Mission"
+        android:textSize="30sp"
+        android:gravity="start"
+        android:textColor="@color/background_normal"
+        android:fontFamily="@font/myriad_pro_bold"
+        android:layout_marginBottom="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/about_mission"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/font_black" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="App Build Number"
+            android:textSize="20sp"
+            android:gravity="start"
+            android:textColor="@color/background_normal"
+            android:fontFamily="@font/myriad_pro_bold"
+            android:layout_marginBottom="15dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" : "
+            android:textSize="20sp"
+            android:textColor="@color/font_black" />
+        <TextView
+            android:id="@+id/buildNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20sp"
+            android:textColor="@color/font_black" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="App Build Version"
+            android:textSize="20sp"
+            android:gravity="start"
+            android:textColor="@color/background_normal"
+            android:fontFamily="@font/myriad_pro_bold"
+            android:layout_marginBottom="15dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" : "
+            android:textSize="20sp"
+            android:textColor="@color/font_black" />
+        <TextView
+            android:id="@+id/buildVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20sp"
+            android:textColor="@color/font_black" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="https://www.vtitan.com"
+            android:textSize="20sp"
+            android:gravity="start"
+            android:textColor="@color/background_normal"
+            android:fontFamily="@font/myriad_pro_bold"
+            android:layout_marginBottom="15dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Copyright © vTitan 2022. All Rights Reserved"
+            android:textSize="20sp"
+            android:gravity="start"
+            android:textColor="@color/font_black"
+            android:fontFamily="@font/myriad_pro_regular"
+            />
+    </LinearLayout>
+
+</LinearLayout>
